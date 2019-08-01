@@ -7,10 +7,14 @@ public class bicicleta {
     private int año;
     private float precio;
 
-    public bicicleta(String nroDeSerie, String modelo, float precio) {
+    public bicicleta(String nroDeSerie, String modelo, float precio,int año) {
         this.nroDeSerie = nroDeSerie;
         this.modelo = modelo;
         this.precio = precio;
+        this.año = año;
+    }
+
+    bicicleta() {
     }
 
     public void setPrecio(float precio) {
@@ -27,7 +31,7 @@ public class bicicleta {
 
     @Override
     public String toString() {
-        return "nroDeSerie=" + nroDeSerie + ", modelo=" + modelo + " " + año + ", precio=" + precio;
+        return "nroDeSerie=" + nroDeSerie + ", modelo=" + modelo + ", año= " + año + ", precio=" + precio;
     }
 
     public String getModelo() {
